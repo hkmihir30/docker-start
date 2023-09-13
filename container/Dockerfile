@@ -1,6 +1,8 @@
 # Test web app that returns the name of the host/pod/container servicing req
+# this is just a special container image with node installed and a few tools
 FROM node:current-alpine
 
+# metadata
 LABEL org.opencontainers.image.title="Hello Docker Learners!" \
       org.opencontainers.image.description="Web server showing host that responded" \
       org.opencontainers.image.authors="@nigelpoulton"
